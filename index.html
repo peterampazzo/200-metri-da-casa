@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>200 metri da 🏠</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/leaflet/leaflet.css" />
+    <script src="assets/leaflet/leaflet.js"></script>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #map {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #mapid {
+            height: 100%;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mapid"></div>
+    <script>
+        var map = L.map("mapid").setView([45.40797, 11.88586], 13);
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        var Marker, Circle = {};
+        map.on("click", function (e) {
+            lat = e.latlng.lat;
+            lon = e.latlng.lng;
+
+            // Clear existing
+            if (Marker !== undefined) {
+                map.removeLayer(Marker);
+                map.removeLayer(Circle);
+            }
+
+            // Add a marker+circle to show where you clicked
+            Marker = L.marker([lat, lon]).addTo(map);
+            Circle = L.circle([lat, lon], 200).addTo(map);
+        });
+    </script>
+</body>
+
+</html>

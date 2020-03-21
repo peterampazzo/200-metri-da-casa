@@ -71,14 +71,14 @@
             addPoint(e, "Questa è l'area concessa per la posizione rilevata")
         }
 
-        // function onLocationError(e) {
-        //     if (e.code === 1) {
-        //         alert("Puoi cliccare sulla mappa per visualizzare l'area concessa");
-        //     }
-        //     else {
-        //         alert(e.message);
-        //     }
-        // }
+        function onLocationError(e) {
+            if (e.code === 1) {
+                alert("Puoi cliccare sulla mappa per visualizzare l'area concessa");
+            }
+            else {
+                alert(e.message);
+            }
+        }
 
         map.on('locationerror', onLocationError);
 

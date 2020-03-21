@@ -86,6 +86,7 @@
                 Marker.bindPopup(text).openPopup();
             }
             Circle = L.circle([lat, lon], 200).addTo(map);
+            map.setView(e.latlng, 16);
         }
 
         map.on('locationfound', onLocationFound);

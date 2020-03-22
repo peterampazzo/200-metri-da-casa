@@ -7,68 +7,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <!-- leaflet -->
-    <link rel="stylesheet" href="assets/leaflet/leaflet.css" />
-    <script src="assets/leaflet/leaflet.js"></script>
-
-    <!-- easybutton -->
-    <script src="assets/leaflet-easybutton/easy-button.js"></script>
-    <link rel="stylesheet" href="assets/leaflet-easybutton/easy-button.css">
-
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-
-    <!-- control geocoder -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script> -->
-
-    <style>
-        #info {
-            width: 60px;
-            height: 60px;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: white;
-            z-index: 1000;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 40px;
-        }
-
-        #icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        html,
-        body {
-            padding: 0;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            font: 16px/1.4 Helvetica, sans-serif;
-        }
-
-        #mapid {
-            height: 100%;
-            width: 100vw;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
 <body>
-    <div id="mapid">
-        <div id="info">
-            <a href="info.html">
-                <i class="fas fa-info-circle"></i>
-            </a>
-        </div>
+    <div class="container center">
+        <h1>200 metri da 🏠</h1>
+        <p>Le ordinanze
+            della <a
+                href="https://www.venetoeconomia.it/wp-content/uploads/2020/03/Ordinanza20marzo2020Veneto.pdf">Regione
+                Veneto</a> e della <a
+                href="https://www.regione.lombardia.it/wps/wcm/connect/7cffa84f-f4b2-4558-9092-99c6571f5a3d/Ordinanza+514.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-7cffa84f-f4b2-4558-9092-99c6571f5a3d-n3-Pa3e">Regione
+                Lombardia</a> per COVID19 impongono delle nuove limitazioni per passeggiate ed attività sportive. Si
+            possono svolgere soltanto nelle vicinanze della propria casa (200 metri).</p>
+        <p><a href="map.html">Controlla l'area concessa dalla tua posizione</a> (ti verrà chiesta la tua posizione).</p>
+        <!-- <p><a href="about.html">Maggiori informazioni</a></p> -->
+
     </div>
-    <script src="assets/map.js"></script>
+
 </body>
 
 </html>

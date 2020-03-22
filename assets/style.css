@@ -1,0 +1,91 @@
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/ubuntu-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
+    url("./fonts/ubuntu-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/ubuntu-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./fonts/ubuntu-v14-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/ubuntu-v14-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/ubuntu-v14-latin-regular.svg#Ubuntu") format("svg");
+  /* Legacy iOS */
+}
+
+#info {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+}
+
+#icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu";
+}
+
+#mapid {
+  height: 100%;
+  width: 100vw;
+}
+
+a {
+  color: cornflowerblue;
+}
+
+@media (min-width: 320px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 60px;
+    margin-left: 20px;
+    width: 750px;
+  }
+}
+
+.center {
+    padding-top: 150px;
+    /* background-color: black; */
+}
+
+h1 {
+  font-size: 22px;
+  width: 200px;
+  text-transform: uppercase;
+  padding: 2px;
+}
+
+h1 span {
+  color: white;
+  background-color: black;
+  padding-left: 2px;
+  padding-right: 2px;
+}

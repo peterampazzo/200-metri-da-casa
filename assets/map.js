@@ -1,5 +1,5 @@
 var map = L.map("mapid").setView([45.40797, 11.88586], 13);
-map.locate({ setView: false, maxZoom: 16, enableHighAccuracy: true });
+map.locate({ setView: false, maxZoom: 16 });
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
@@ -7,7 +7,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 L.easyButton('<i class="fas fa-map-marker"></i>', (btn, map) => {
-  map.locate({ setView: false, maxZoom: 16, enableHighAccuracy: true });
+  map.locate({ setView: false, maxZoom: 16 });
 }).addTo(map);
 
 // GeoCoder

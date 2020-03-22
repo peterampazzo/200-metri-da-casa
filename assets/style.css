@@ -19,26 +19,6 @@
   /* Legacy iOS */
 }
 
-#info {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: white;
-  z-index: 1000;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 40px;
-}
-
-#icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 html,
 body {
   padding: 0;
@@ -71,9 +51,45 @@ a {
   }
 }
 
+.button {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.info {
+  top: 100px;
+  right: 20px;
+}
+
+.home {
+  top: 20px;
+  right: 20px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-container {
+  padding-top: 20px;
+}
+.social-link {
+  font-size: 30px;
+  color: #404040;
+  text-decoration: none;
+}
+
 .center {
     padding-top: 150px;
-    /* background-color: black; */
 }
 
 h1 {

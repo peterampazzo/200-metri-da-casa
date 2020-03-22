@@ -6,6 +6,11 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+
+L.easyButton('<i class="fas fa-map-marker"></i>', (btn, map) => {
+    map.locate({ setView: false, maxZoom: 16 });
+}).addTo(map);
+
 var Marker,
   Circle = {};
 

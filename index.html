@@ -7,9 +7,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+    <!-- leaflet -->
     <link rel="stylesheet" href="assets/leaflet/leaflet.css" />
     <script src="assets/leaflet/leaflet.js"></script>
 
+    <!-- easybutton -->
+    <script src="assets/leaflet-easybutton/easy-button.js"></script>
+    <link rel="stylesheet" href="assets/leaflet-easybutton/easy-button.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <style>
         #info {
             width: 60px;
@@ -21,6 +28,7 @@
             z-index: 1000;
             border-radius: 50%;
             text-align: center;
+            font-size: 40px;
         }
 
         #icon {
@@ -51,7 +59,7 @@
     <div id="mapid">
         <div id="info">
             <a href="info.html">
-                <img id="icon" src="assets/icons/info.svg" alt="Informazioni">
+                <i class="fas fa-info-circle"></i>
             </a>
         </div>
     </div>

@@ -63,10 +63,10 @@ function addPoint(text) {
   Marker = L.marker([latlng.lat, latlng.lng]).addTo(map);
   if (text !== undefined) {
     Marker.bindPopup(
-      text + "<br>Il raggio è di " + radius + " metri."
+      text + "<br>Il raggio selezionato è di " + radius + " metri."
     ).openPopup();
   } else {
-    Marker.bindPopup("Il raggio è di " + radius + " metri.").openPopup();
+    Marker.bindPopup("Il raggio selezionato è di " + radius + " metri.").openPopup();
   }
   Circle = L.circle([latlng.lat, latlng.lng], parseInt(radius)).addTo(map);
   map.setView(latlng, 15);

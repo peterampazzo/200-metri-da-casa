@@ -8,10 +8,9 @@
   src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
     url("./fonts/ubuntu-v14-latin-regular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("./fonts/ubuntu-v14-latin-regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("./fonts/ubuntu-v14-latin-regular.woff") format("woff"),
+    /* IE6-IE8 */ url("./fonts/ubuntu-v14-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/ubuntu-v14-latin-regular.woff")
+      format("woff"),
     /* Modern Browsers */ url("./fonts/ubuntu-v14-latin-regular.ttf")
       format("truetype"),
     /* Safari, Android, iOS */
@@ -51,32 +50,62 @@ a {
   }
 }
 
-.button {
-  width: 60px;
-  height: 60px;
+.highlight{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#tools {
   position: absolute;
-  background-color: white;
+  display: block;
   z-index: 1000;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 40px;
-}
-
-.info {
-  top: 100px;
-  right: 20px;
-}
-
-.home {
+  padding: 25px;
+  width: 200px;
+  height: 340px;
   top: 20px;
-  right: 20px;
+  right: 20px; /* 100px */
+  background-color: white;
+  overflow: hidden;
 }
 
-.icon {
+#collapse {
   position: absolute;
-  top: 50%;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: #2874A6;
+}
+
+.title {
+  text-align: center;
+}
+
+.range-wrap {
+  /* padding-top: 5px; */
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.range {
+  width: 100%;
+}
+
+.bubble {
+  background: red;
+  color: white;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  left: 15%;
+  transform: translateX(-50%);
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: red;
+  top: -1px;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .social-container {

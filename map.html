@@ -30,17 +30,19 @@
 </head>
 
 <body>
-    <div id="mapid">
-        <a href="/">
-            <div class="button home">
-                <i class="fas fa-home"></i>
-        </a>
-    </div>
-    <div class="button info">
-        <a href="about.html">
-            <i class="fas fa-info-circle"></i>
-        </a>
-    </div>
+    <div id="mapid"></div>
+    <div id="tools">
+        <i class="fas fa-times-circle" id="collapse"></i>
+        <h1 class="title">Strumenti</h1>
+        <p>Dopo aver posizionato la tua posizione puoi scegliere il raggio del cerchio.
+            <b><u>Questo valore può variare in base alla propria regione o comune.</u></b>
+            Assicurati di sapere il valore esatto, ma se possibile resta a casa.
+        </p>
+        <div class="range-wrap">
+            <input class="range" type="range" id="radius" name="radius" min="100" max="900" value="200" step="100" />
+            <output class="bubble">200</output>
+        </div>
+        <p><a href="/about.html">Maggiori informazioni</a></p>
     </div>
     <script src="assets/map.js"></script>
 </body>

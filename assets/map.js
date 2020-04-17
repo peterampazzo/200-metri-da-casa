@@ -31,7 +31,7 @@ L.easyButton('<i class="fas fa-map-marker"></i>', (btn, map) => {
 let Marker,
   Circle = {};
 
-let latlng = {};
+let latlng;
 let radius = 200;
 
 function onLocationFound(e) {
@@ -94,7 +94,9 @@ inputRadius.addEventListener("input", () => {
   bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
 
   radius = val;
-  addPoint();
+  if (latlng !== undefined) {
+    addPoint();
+  }
 });
 
 collapse.addEventListener("click", () => {

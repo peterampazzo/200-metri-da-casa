@@ -100,7 +100,6 @@ inputRadius.addEventListener("input", () => {
 });
 
 collapse.addEventListener("click", () => {
-  console.log(tools.className);
   if (tools.style.height === "340px") {
     tools.style.height = "5px";
     collapse.className = "fas fa-chevron-circle-down";
